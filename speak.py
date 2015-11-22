@@ -4,6 +4,10 @@
 #
 # 音声読み上げスクリプト Ver.1
 #
+# 日本語で用意されたテキストファイルを、OpenJTalkを使用して音声読み上げします。
+# 長いセリフは句読点で細かく区切り順番にOpenJTalkに渡すことで、準備時間を短縮
+# する工夫をしています。
+#
 # How to Use:
 #   (1) 読み上げる文章をテキストファイルにする
 #   (2) このスクリプトを実行し引数にテキストファイル名を指定する
@@ -33,12 +37,7 @@ APLAY = '/usr/bin/aplay'
 DICDIR = '/home/pi/openjtalk/open_jtalk_dic_utf_8-1.08'
 
 # 音声ファイル
-# VOICE = '/home/pi/openjtalk/hts_voice/nitech_jp_atr503_m001.htsvoice'
-# VOICE = '/home/pi/openjtalk/hts_voice/omoine_ikuru.htsvoice'
-# VOICE = '/home/pi/openjtalk/hts_voice/syane_homu.htsvoice'
-# VOICE = '/home/pi/openjtalk/hts_voice/suranki.htsvoice'
 VOICE = '/home/pi/openjtalk/hts_voice/mei_normal.htsvoice'
-# VOICE = '/home/pi/openjtalk/hts_voice/mei_happy.htsvoice'
 
 # 話す速度(標準 1.0。0.0以上の値を指定)
 SPEED = 1.0
